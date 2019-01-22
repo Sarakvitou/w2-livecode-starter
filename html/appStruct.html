@@ -2,6 +2,17 @@
 <!-- START TOP NAVBAR -->
 <div class="navbar">
   <!-- TO DO: FILL IN-->
+  <div>
+    <span class ="navbarItems"> 
+      <button id = "menuBtn" style="background-color: transparent; border-color: #13294E; text-align: center;">
+        <span id = "menuButtonIcon" class="fas fa-bars" style="color: white; font-size: 30px; cursor: pointer; text-align: center">
+          
+        </span>
+      </button>
+      <img src = "http://tiny.cc/sslogo" alt="Speed Score Logo" height="38px" width="38px">
+      <span id="topBartTitle" style="color: white; font-size: 18px"> SpeedScore TRACK</span>
+    </span>
+  </div>
 </div>
 <!-- END TOP NAVBAR -->
 <!-- START SIDEMENU -->
@@ -17,24 +28,22 @@
       <!--BEGIN GROUP OF MODE/ACTION BUTTONS -->
       <!--Mode buttons show current mode
           Action buttons are contextual; they provide easy access to most important functionality in current mode -->
-        <a id= "" class=""><span class=""></span>&nbsp;Feed</a>
-        <a id= "" class=""><span class=""></span>&nbsp;Followed Users</a>
-       
-        <a id= "" class=""><span class=""></span>&nbsp;Rounds</a>
-        <a id= "" class=""><span class=""></span>&nbsp;Log New Round</a>
-        <a id= "" class=""><span class=""></span>&nbsp;Search Rounds</a>
-        <a id= "" class=""><span class=""></span>&nbsp;Sort Rounds</a>
-       
-        <a id= "" class=""><span class=""></span>&nbsp;Courses</a>
-        <a id= "" class=""><span class=""></span>&nbsp;Find Course</a>
-        <a id= "" class="" ><span class=""></span>&nbsp;Show All Courses</a>
+        <a id= "feedBtn" class="" hidden><span class="fas fa-th-list" ></span>&nbsp;Feed</a>
+        <a id= "followUsersBtn" class="" hidden><span class=""></span>&nbsp;Followed Users</a> 
+        <a id= "roundsBtn" class="" hidden><span class="fas fa-history" ></span>&nbsp;Rounds</a>
+        <a id= "logNewRoundsBtn" class="" hidden><span class=""></span>&nbsp;Log New Round</a>
+        <a id= "searchRoundsBtn" class="" hidden><span class=""></span>&nbsp;Search Rounds</a>
+        <a id= "sortRoundsBtn" class="" hidden><span class=""></span>&nbsp;Sort Rounds</a> 
+        <a id= "coursesBtn" class="" hidden><span class="fas fa-flag"></span>&nbsp;Courses</a>
+        <a id= "findCoursesBtn" class="" hidden><span class=""></span>&nbsp;Find Course</a>
+        <a id= "showAllCourseBtn" class="" hidden><span class=""></span>&nbsp;Show All Courses</a>
       <!-- END GROUP OF MODE/ACTION BUTTONS -->
 
       <!-- BEGIN GROUP OF ALWAYS THERE BUTTONS -->       
-        <a class="" href=""><span class=""></span>&nbsp;Settings</a>
-        <a class="" href=""><span class=""></span>&nbsp;About SpeedScore</a>
-        <a class=""><span class=""></span>&nbsp;Account &amp; Profile</a>
-        <a class="" ><span class=""></span>&nbsp;Sign Out</a>
+        <a class="" href="" id="settingsBtn"><span class="fas fa-cog"></span>&nbsp;Settings</a>
+        <a class="" href="" id="aboutBtn"><span class="fas fa-info-circle"></span>&nbsp;About SpeedScore</a>
+        <a class="" id="profileBtn"><span class="fas fa-user-circle"></span>&nbsp;Account &amp; Profile</a>
+        <a class="" id="signOutBtn"><span class=""></span>&nbsp;Sign Out</a>
       </div>
       <!-- END GROUP OF ALWAYS THERE BUTTONS -->
       <!-- END MAIN MENU CONTENT -->

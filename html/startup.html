@@ -3,10 +3,41 @@
 //the global state variables, and (c) transitioning to the login page
   //Initialize touch-friendly tooltips
   //initializeTooltips();
-  
+  var currentPage = "feedDiv";
+  var btnIdsToDivIds = 
+  {
+    "feedBtn" : "feedDiv",
+   // "followUsersBtn" : "followUsersDiv",
+    "roundsBtn" : "roundsDiv",
+    //"logNewRoundsBtn" : "logNewRoundsDiv",
+    //"searchRoundsBtn" : "searchRoundsDiv",
+    //"sortRoundsBtn" : "sortRoundsDiv",
+    "coursesBtn" : "coursesDiv",
+    //"findCoursesBtn" : "findCoursesDiv",
+    //"showAllCourseBtn" : "showAllCourseDiv",
+  };
   //Declare Initialize global variables
-  
-  
-  //Show login page
+  var btnIdsToPageTitles = 
+  {
+    "feedBtn" : "Activity Feed",
+    //"followUsersBtn" : "followUsersDiv",
+    "roundsBtn" : "Rounds",
+    //"logNewRoundsBtn" : "logNewRoundsDiv",
+    //"searchRoundsBtn" : "searchRoundsDiv",
+    //"sortRoundsBtn" : "sortRoundsDiv",
+    "coursesBtn" : "Course",
+    //"findCoursesBtn" : "findCoursesDiv",
+    //"showAllCourseBtn" : "showAllCourseDiv",
+  };
+  document.getElementById("feedBtn").addEventListener("click",menuBtnClick);
+  document.getElementById("roundsBtn").addEventListener("click",menuBtnClick);
+  document.getElementById("coursesBtn").addEventListener("click",menuBtnClick);
+
+  document.getElementById("courseDiv").style.display = "none";
+  document.getElementById("feedDiv").style.display = "none";
+  document.getElementById("profileDiv").style.display = "none";
+  document.getElementById("settingDiv").style.display = "none";
+  document.getElementById("roundsDiv").style.display = "none";
+    //Show login page
 
   </script>
